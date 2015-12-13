@@ -15,7 +15,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 11 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -153,7 +153,7 @@ bar {
 }
 
 # Wallpapers
-exec_always feh --bg-scale /home/james/Pictures/Wallpaper/n7fBVOa.jpg
+exec_always feh --bg-scale /home/james/Pictures/Wallpaper/HevQN1W.jpg
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+ unmute #increase sound volume
@@ -173,10 +173,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # Hiding vertical and horizontal borders
 hide_edge_borders both
 
-#Synclient settings
-exec_always synclient TapButton1=1
-exec_always synclient TapButton2=3
-exec_always synclient PalmDetect=1
-exec_always synclient MaxTapMove=100
-exec_always synclient AccelFactor=0.2
+#Hiding titlebar 1px
+new_window 1pixel
 
+#Synclient settings
+exec_always bash /home/james/Documents/ShellScripts/synclient.sh
