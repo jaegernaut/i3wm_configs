@@ -179,8 +179,10 @@ bindsym XF86AudioPrev exec playerctl previous
 # Hiding vertical and horizontal borders
 hide_edge_borders both
 
-#Hiding titlebar 1px
+# Hiding titlebar 1px
 new_window 1pixel
 
-#Synclient settings
+# Synclient settings
 exec_always bash /home/james/Documents/ShellScripts/synclient.sh
+
+# i3 Colour configuration
